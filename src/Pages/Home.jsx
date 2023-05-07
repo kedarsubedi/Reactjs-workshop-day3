@@ -23,7 +23,7 @@ const Home = () => {
       <CreateTweet setShouldRefresh={setShouldRefresh} />
       {tweets.length &&
         tweets.map((tweet) => {
-          return <Tweet name={tweet?.user.fullname} username={tweet?.authorname} key={tweet?._id} content={tweet?.content} profilepicture={`https://avatars.githubusercontent.com/u/${tweet?.user.githubId}`} picture={tweet?.image} id={tweet?._id} />
+          return <Tweet name={tweet?.user.fullname} username={tweet?.authorname} key={tweet?._id} content={tweet?.content} profilepicture={`https://avatars.githubusercontent.com/u/${tweet?.user.githubId}`} image={tweet?.image} id={tweet?._id} />
         })
       }
     </>
