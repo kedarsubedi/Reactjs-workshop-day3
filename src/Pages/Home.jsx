@@ -1,10 +1,10 @@
-import './App.css';
-import Tweet from './components/Tweet';
+import '../App.css';
+import Tweet from '../components/Tweet';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import CreateTweet from './components/CreateTweet';
+import CreateTweet from '../components/CreateTweet';
 
-const App = () => {
+const Home = () => {
   const [tweets, setTweets] = useState([]);
   const [shouldRefresh, setShouldRefresh] = useState(false);
   const fetchTweets = async () => {
@@ -27,11 +27,11 @@ const App = () => {
       <Tweet name="Ram" username="@ram12" time="7h" content="This is last tweet" picture={msipic}/> */}
       {
         tweets.map((tweet) => {
-          return <Tweet name={tweet.user.fullname} username={tweet.authorname} key={tweet._id} content={tweet.content} profilepicture={tweet.avatar} picture={tweet.image} />
+          return <Tweet name={tweet.user.fullname} username={tweet.authorname} key={tweet._id} content={tweet.content} profilepicture={`https://avatars.githubusercontent.com/u/${tweet.user.githubId}`} picture={tweet.image} />
         })
       }
     </>
   );
 };
 
-export default App;
+export default Home;
