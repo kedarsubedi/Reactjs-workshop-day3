@@ -1,4 +1,5 @@
 const Header = (props) => {
+    // console.log(props.name)
     return (
         <div className="tweet-header">
             <h3 className="username">{props.name}</h3>

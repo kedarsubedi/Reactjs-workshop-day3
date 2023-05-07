@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 const About = () => {
     return (
         <>
-            <Navbar />
             <main class="main">
                 <h1 class="main__heading">About Twitter</h1>
                 <p class="main__text">Twitter is a social networking and microblogging service that enables its users to send and read short messages called tweets. Twitter was created in 2006 by Jack Dorsey, Biz Stone, and Evan Williams, and launched in July of that year. The service rapidly gained worldwide popularity, with millions of users signing up in its first few years.</p>
