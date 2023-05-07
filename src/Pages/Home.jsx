@@ -1,4 +1,4 @@
-import '../App.css';
+
 import Tweet from '../components/Tweet';
 import axios from 'axios';
 import { useEffect, useState } from 'react';

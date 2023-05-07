@@ -1,5 +1,6 @@
 #root {
-  max-width: 1980px;
+  /* max-width: 1980px; */
+  width: 60%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -177,5 +178,56 @@ button {
 button:hover {
   color: #1da1f2;
 }
-
+/* Main content styles */
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+  
+.main__heading {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+  
+.main__subheading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+  
+.main__text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+  
+.main__list {
+  margin-top: 40px;
+  list-style: none;
+}
+  
+.main__list-item {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+  
+.main__link {
+  color: #1da1f2;
+  text-decoration: none;
+}
+  
+/* Footer styles */
+.footer {
+  background-color: #e6ecf0;
+  text-align: center;
+  padding: 10px;
+}
+  
+.footer__text {
+  font-size: 14px;
+  color: #666;
+}
 
