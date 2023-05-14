@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import TweetBody from './TweetBody';
+import TweetComment from './TweetComment';
 const Tweet = ({ name, content, image, profilepicture, id }) => {
     return (
         <div className="tweet">

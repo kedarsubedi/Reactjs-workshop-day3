@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -32,6 +35,7 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+
 nav {
   background-color: #1da1f2;
   padding: 10px;
@@ -90,7 +94,8 @@ nav button[type="submit"] {
 .read-the-docs {
   color: #888;
 }
-.create-tweet .tweet-box{
+
+.create-tweet .tweet-box {
   height: 80px;
   width: 100%;
   border-radius: 5px;
@@ -99,13 +104,15 @@ nav button[type="submit"] {
   border: 1px solid #e6ecf0;
   margin-bottom: 10px;
 }
-.create-tweet .submit-button{
+
+.create-tweet .submit-button {
   display: flex;
   justify-content: end;
   margin-bottom: 5px;
   /* color: blue; */
 }
-.create-tweet .submit-button button{
+
+.create-tweet .submit-button button {
   background-color: #1d9bf0;
   color: white;
 }
@@ -177,56 +184,107 @@ button {
 button:hover {
   color: #1da1f2;
 }
+
 /* Main content styles */
 .main {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
 }
-  
+
 .main__heading {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-  
+
 .main__subheading {
   font-size: 24px;
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 20px;
 }
-  
+
 .main__text {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
-  
+
 .main__list {
   margin-top: 40px;
   list-style: none;
 }
-  
+
 .main__list-item {
   margin-bottom: 10px;
   font-size: 18px;
 }
-  
+
 .main__link {
   color: #1da1f2;
   text-decoration: none;
 }
-  
+
 /* Footer styles */
 .footer {
   background-color: #e6ecf0;
   text-align: center;
   padding: 10px;
 }
-  
+
 .footer__text {
   font-size: 14px;
   color: #666;
 }
 
+.comment-section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.comment {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.profile-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.comment-content {
+  flex: 1;
+}
+.username, .name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.timestamp {
+  font-size: 12px;
+  color: #777;
+}
+.comment-text{
+  font-size: large;
+  margin-left: 5px;
+}
+.write-comment {
+  margin-top: 20px;
+}
+.write-comment textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+}
+.write-comment button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
